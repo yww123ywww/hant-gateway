@@ -1,11 +1,11 @@
-# Default values for hzero-gateway.
+# Default values for hzero-org.hzero.gateway.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: registry.choerodon.com.cn/hzero-hzero/hzero-gateway
+  repository: registry.choerodon.com.cn/hzero-hzero/hzero-org.hzero.gateway
   pullPolicy: Always
 
 deployment:
@@ -49,7 +49,7 @@ service:
   enabled: false
   type: ClusterIP
   port: 8080
-  name: hzero-gateway
+  name: hzero-org.hzero.gateway
   
 ingress:
   enabled: false
